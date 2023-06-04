@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Miltonian Tattoo', cursive;
+}
+
+.enlaces {
+    width: 30%;
+    float: right;
+}
+
+.enlaces img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.principal {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.texto, .texto-respuesta {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.textarea-principal {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Miltonian Tattoo', cursive;
+    background-color: transparent;
+    border: 1px solid #000000;
+    resize: none;
+    width: 450px; 
+    height: 400px; 
+}
+
+::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Miltonian Tattoo', cursive;
+}
+
+.mensaje-encriptado {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Miltonian Tattoo', cursive;
+    background-color: transparent;
+    border: 1px solid #000000;
+    resize: none;
+    width: 450px; 
+    height: 400px;
+}
+
+.copiar {
+    position: absolute;
+    right:  23.9%;
+    top: 50%;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #ffffff;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.copiar:hover {
+    transform: scale(1.1);
+    border-color: #ff0000;
+}
+
+.danger {
+    width: 310px;
+    margin: 0 auto;
+}
+
+.informacion {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.advertencia {
+    float: left;
+    margin-right: 3px;
+}
+
+.alura {
+    position: relative;
+    right: 20px;
+    width: 140px;
+    transform: translateY(0px);
+    animation: float 4s ease-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.botones {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn-encriptar, .btn-desencriptar {
+    margin-left: 50px;
+    background-color: transparent;
+    width: 200px;
+    height: 35px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 22px;
+    font-family: 'Miltonian Tattoo', cursive;
+    color: #ffffff;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover {
+    transform: scale(1.1);
+    border-color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+
+    *{
+        margin: 0;
+    }
+
+    header {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copiar {
+        left: 110px;
+        top: 100%;
+    }
+
+    .principal{
+        width: 100%;
+    }
+
+    .texto, 
+    .texto-respuesta {
+        margin-left: 10px;
+    }
+
+    .textarea-principal,
+    .mensaje-encriptado{
+        width: 100%;
+    }
+
+    .mensaje-encriptado {
+        width: 355px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .enlaces {
+        width: 200px;
+    }
+
+    .alura {
+        width: 100px;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .danger {
+        margin-bottom: 20px;
+    }
+
+    .btn-desencriptar, 
+    .btn-encriptar {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
