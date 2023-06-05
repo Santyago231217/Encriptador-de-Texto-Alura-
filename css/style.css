@@ -189,5 +189,7 @@ body {
     .btn-encriptar {
         margin-left: 0;
         margin-bottom: 20px;
+        border: 3px solid #ffffff;
+        width: 210px;
     }
 }
